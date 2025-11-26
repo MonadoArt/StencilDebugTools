@@ -254,10 +254,13 @@ public class StencilCalculatorWindow : EditorWindow
     {
         GUILayout.BeginHorizontal();
         GUILayout.Label(label, GUILayout.Width(LabelColumnWidth), GUILayout.Height(rowHeight));
+
+        // Clone once per row to avoid per-bit allocations and color bleed across rows.
+        GUIStyle bitStyle = new GUIStyle(baseStyle);
+
         for (int i = 7; i >= 0; i--)
         {
             bool bit = ((value >> i) & 1) == 1;
-            GUIStyle bitStyle = baseStyle;
             if (overrideColor.HasValue)
             {
                 ApplyColorToAllStates(bitStyle, overrideColor.Value);
