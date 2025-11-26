@@ -1,9 +1,9 @@
 {
-  "name": "com.vrchat.demo-template",
-  "displayName": "VRChat Example Package",
-  "version": "0.0.7",
+  "name": "com.monadoart.monadoart.brp-stencildebugtools",
+  "displayName": "Monado_Art StencilTools",
+  "version": "0.0.1",
   "unity": "2022.3",
-  "description": "Simple Package for testing Automation",
+  "description": "Set of tools for testing Stencil setups",
   "vrchatVersion": "2022.1.1",
   "author": {
     "name": "Momo the Monster",
