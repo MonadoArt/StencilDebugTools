@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.monadoart.monadoart.brp-stencildebugtools": {
+    "com.monadoart.brp-stencildebugtools": {
       "version": "file:com.vrchat.demo-template",
       "depth": 0,
       "source": "embedded",
