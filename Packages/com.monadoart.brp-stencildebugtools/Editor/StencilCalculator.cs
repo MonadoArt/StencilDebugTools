@@ -87,7 +87,7 @@ public class StencilCalculatorWindow : EditorWindow
     private float rowHeight;
     private GUIStyle bitMonoStyle;
 
-    [MenuItem("Tools/Stencil Calculator")]
+    [MenuItem("Tools/StencilDebugTools/Stencil Calculator")]
     public static void ShowWindow() => GetWindow<StencilCalculatorWindow>("Stencil Calculator");
 
     private void OnEnable()
